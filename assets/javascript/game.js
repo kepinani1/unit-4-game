@@ -30,10 +30,6 @@ $(document).ready(function () {
     $("#crystal3").text(crystal3);
     $("#crystal4").text(crystal4);
     var myTotal = 0;
-    var wins = 0;
-    var losses = 0;
-    $("#numberWins").text(wins);
-    $("#numberLosses").text(losses);
     $("#finalTotal").text(myTotal);
   }
   function winnersCorner() {
@@ -46,40 +42,24 @@ $(document).ready(function () {
     alert("Bummer, you lost!");
     $("#numberLosses").text(losses);
   }
-  function addCrystalValue(text){
+  function addCrystalValue(text) {
     myTotal += text;
     $("#finalTotal").text(myTotal);
-}
-  $("#crystal1").on("click", function () {
+  }
+  $("#crystal1, #crystal2, #crystal3, #crystal4").on("click", function () {
     addCrystalValue(crystal1);
-    if (myTotal === Random) {
-      winnersCorner();
-    } else if (myTotal != Random) {
-      losersCorner();
-    }
-  })
-  $("#crystal2").on("click", function () {
     addCrystalValue(crystal2);
-    if (myTotal === Random) {
-      winnersCorner();
-    } else if (myTotal != Random) {
-      losersCorner();
-    }
-  })
-  $("#crystal3").on("click", function () {
     addCrystalValue(crystal3);
-    if (myTotal === Random) {
-      winnersCorner();
-    } else if (myTotal != Random) {
-      losersCorner();
-    }
-  })
-  $("#crystal4").on("click", function () {
     addCrystalValue(crystal4);
-    if (myTotal === Random) {
+    if (myTotal < Random) {
+      $("#finalTotal").text(myTotal);
+    } else if (myTotal === Random) {
       winnersCorner();
-    } else if (myTotal != Random) {
+      $("#finalTotal").text(myTotal);
+    }
+    else if (myTotal != Random) {
       losersCorner();
+      $("#finalTotal").text(myTotal);
     }
   });
 });
