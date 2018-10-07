@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+</head>
+
+<body>
+
+    <body background="https://img.freepik.com/free-vector/minimal-triangle-pattern-design-in-pastel-colors_1017-14885.jpg?size=338&ext=jpg">
+        <div id="game">
+            <div id="header">
+                <h1>The Crystals Collector Game!</h1>
+            </div>
+            <br>
+            <div class="section">
+                <div id="paragraph1">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <br>
+                </div>
+                <div id="paragraph2">
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                        your total score.</p>
+                    <br>
+                </div>
+                <div id="paragraph3">
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score
+                        goes above the random number.</p>
+                    <br>
+                </div>
+                <div id="paragraph4">
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <br>
+                </div>
+                <div id="paragraph5">
+                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="numberToMatch">
+            <h2>Number To Match:
+                <span id="randomNumber"></span>
+            </h2>
+        </div>
+        <div class="clearfix">
+            <div class="scoreboard">
+                <h2>Wins:
+                    <span id="numberWins"></span>
+                    <br> Losses:
+                    <span id="numberLosses"></span>
+                </h2>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <div class="crystals">
+            <img src="assets/images/crystal1.jpg" width="100" height="100" id="crystal1">
+                <img src="assets/images/crystal2.jpg" width="100" height="100" id="crystal2">
+                    <img src="assets/images/crystal3.jpg" width="100" height="100" id="crystal3">
+                        <img src="assets/images/crystal4.jpg" width="100" height="100" id="crystal4">
+        </div>
+        <div class="myTotal">
+            <h2>Your total score is:
+                <span id="finalTotal"></span>
+            </h2>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        <script src="assets/javascript/game.js"></script>
+    </body>
+
+</html>

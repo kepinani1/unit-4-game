@@ -1,0 +1,64 @@
+#header {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: 60px;
+    width: 300px;
+    font-size: 20pt;
+    text-align: center;
+    background: teal;
+}
+.section {
+    font-family: 'Times New Roman', Times, serif;
+    background: pink;
+    color: black;
+    padding-top: 2pc;
+    padding-bottom: 1pc;
+    width: 600px;
+    height: 240px;
+    font-size: 14pt;
+    text-align: left;
+}
+.numberToMatch{
+    float: left;
+    width: 200px;
+    height: 30px;
+    background: orange;
+    text-align: left;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+}
+.scoreboard{
+    float: left;
+    width: 200px;
+    height: 30px;
+    background: orange;
+    text-align: left;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+.crystals{
+   float:left;
+}
+.userTotal{
+    float:left;
+    width: 200px;
+    height: 20px;
+    background: orange;
+    text-align: left;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+}
